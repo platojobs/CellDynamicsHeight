@@ -30,4 +30,7 @@
 @property(nonatomic,copy)void(^comment)(CaculateCell*cell,NSIndexPath *ind);
 
 @property(nonatomic,strong)ComputeCellFrame*cellFrame;
+
++(instancetype)initializationWith:(UITableView*)tableView;
++(NSString*)reuseID;
 @end

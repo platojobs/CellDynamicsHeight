@@ -9,12 +9,26 @@
 #import "CaculateCell.h"
 #import "ComputeCellFrame.h"
 #import "DataModel.h"
+static NSString  *const reuseID = @"CaculateCell";
 @implementation CaculateCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
 }
+
++(instancetype)initializationWith:(UITableView*)tableView{
+    
+    CaculateCell *cell = [tableView dequeueReusableCellWithIdentifier:[self reuseID]];
+    if (!cell) {
+        cell = [[CaculateCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:reuseID];
+    }
+    return cell;    
+}
++(NSString*)reuseID{
+    return reuseID;
+}
+
 -(instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     self=[super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
