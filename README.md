@@ -1,13 +1,15 @@
 # CellDynamicsHeight
-1、cell设置动态行高，xib方式 
-==================
+* cell设置动态行高，xib方式
 
-2、动态计算行高
-=============
+* 动态计算行高
+
 
 |Author|cuishengxi|
 |---|---
 |E-mail|1300000608@qq.com
+
+[新浪博客](http://blog.sina.com.cn/cuishengxisvip)
+============================
 
 效果图
 ======
@@ -80,5 +82,5 @@ _cellFrame= cellFrame;
    
 ```
 
-菜鸟一枚，具体什么情况可以详聊：QQQun：195575959
+菜鸟一枚，不喜勿喷：QQ群：195575959
 =================
